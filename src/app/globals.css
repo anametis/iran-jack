@@ -36,7 +36,8 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-  
+    --active: #5B5FC7;
+    --secondary-bg: #F0F0F0;
   }
   .dark {
     --background: 224 71.4% 4.1%;
