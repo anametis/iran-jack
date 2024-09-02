@@ -1,7 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
+import { useRouter, usePathname, redirect } from 'next/navigation';
 import React from 'react';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Bell, MessageSquare, Users, Calendar, Phone, FileText, Box, MoreHorizontal, SquarePlus } from 'lucide-react';
 
@@ -13,7 +14,7 @@ type SidebarItemProps = {
 
 const SidebarItem: React.FC<SidebarItemProps> = ({ icon, label, href }) => {
   const pathname = usePathname();
-  const isActive = pathname === href;
+  const isActive = pathname === href || (pathname === '/' && href === '/statistics');
 
   return (
     <Link 
@@ -27,6 +28,15 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ icon, label, href }) => {
 };
 
 const Sidebar: React.FC = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === '/') {
+      redirect('/statistics');
+    }
+  }, [pathname, router]);
+
   const links = [
     { href: '/activity', label: 'Activity', icon: <Bell className="h-6 w-6" /> },
     { href: '/chat', label: 'Chat', icon: <MessageSquare className="h-6 w-6" /> },
