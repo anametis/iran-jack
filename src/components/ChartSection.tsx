@@ -10,7 +10,7 @@ import { Chart6 } from "@/components/charts/Chart6";
 type Props = {};
 const ChartSection: React.FC<Props> = () => {
   return (
-    <div className="flex flex-wrap gap-4 mt-4 w-auto">
+    <div className="flex flex-col md:flex-row md:flex-wrap gap-4 mt-4 w-72 md:w-auto">
       <ChartCard title="Card1 title" description="Description">
         <Chart1 />
       </ChartCard>
@@ -29,9 +29,6 @@ const ChartSection: React.FC<Props> = () => {
       <ChartCard title="Card6 title" description="Description">
         <Chart6 />
       </ChartCard>
-      {/* <ChartCard title="Card1 title" description="Description">
-        <Chart1 />
-      </ChartCard> */}
     </div>
   );
 };

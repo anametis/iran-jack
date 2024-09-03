@@ -52,7 +52,7 @@ const chartConfig: ChartConfig = {
 };
 
 const BarChartTab = ({ data }: { data: typeof chartData7Days }) => (
-  <ChartContainer config={chartConfig} className="h-80 w-96">
+  <ChartContainer config={chartConfig} className="h-80 w-60 md:w-96">
     <BarChart accessibilityLayer data={data}>
       <CartesianGrid vertical={false} />
       <XAxis

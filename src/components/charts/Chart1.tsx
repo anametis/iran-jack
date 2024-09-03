@@ -41,7 +41,7 @@ const RadialChartTab = ({ data }: { data: typeof chartData7Days }) => {
     <div className="flex flex-col">
       <ChartContainer
         config={chartConfig}
-        className="mx-auto aspect-square w-80 h-80"
+        className="mx-auto aspect-square w-60 md:w-80 h-80"
       >
         <RadialBarChart
           data={data}

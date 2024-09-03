@@ -44,7 +44,7 @@ export function Chart2() {
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader> */}
       <CardContent>
-        <ChartContainer config={chartConfig} className="w-80">
+        <ChartContainer config={chartConfig} className="w-56 md:w-80">
           <BarChart accessibilityLayer data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis

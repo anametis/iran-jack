@@ -61,7 +61,7 @@ const chartConfig: ChartConfig = {
 
 const AreaChartTab = ({ data }: { data: typeof chartData7Days }) => {
   return (
-    <ChartContainer config={chartConfig} className="w-96 h-80">
+    <ChartContainer config={chartConfig} className="w-60 md:w-96 h-80">
       <AreaChart
         accessibilityLayer
         data={data}

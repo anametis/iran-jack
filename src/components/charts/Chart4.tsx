@@ -61,7 +61,7 @@ export function Chart4() {
         <CardTitle>Radial Chart - Label</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader> */}
-      <CardContent className="flex-1 pb-0 w-80">
+      <CardContent className="flex-1 pb-0 w-60 md:w-80">
         <ChartContainer
           config={chartConfig}
           className="mx-auto aspect-square max-h-[250px]"

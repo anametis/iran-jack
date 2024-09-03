@@ -52,7 +52,7 @@ const chartConfig: ChartConfig = {
 };
 
 const PieChartTab = ({ data, totalValue }: { data: typeof chartData7Days, totalValue: number }) => (
-  <ChartContainer config={chartConfig} className="h-80 w-96 flex items-center justify-center">
+  <ChartContainer config={chartConfig} className="h-80 w-60 md:w-96 flex items-center justify-center">
     <PieChart width={200} height={200}>
       <Pie
         data={data}
