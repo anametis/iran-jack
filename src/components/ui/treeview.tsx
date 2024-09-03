@@ -27,7 +27,7 @@ const TreeItem = ({ label, items }: MenuItem) => {
           <span>
             <ChevronRight
               size={16}
-              className={`transform transition-transform duration-300 ease-in-out ${
+              className={` transition-all duration-300 ease-in-out ${
                 isOpen ? "rotate-90" : ""
               }`}
             />
@@ -36,7 +36,7 @@ const TreeItem = ({ label, items }: MenuItem) => {
         <span>{label}</span>
       </div>
       <div
-        className={`transition-max-height duration-300 ease-in-out overflow-hidden ${
+        className={`transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? "max-h-[1000px]" : "max-h-0"
         }`}
         style={{ transitionProperty: 'max-height' }}
@@ -55,7 +55,7 @@ const TreeItem = ({ label, items }: MenuItem) => {
 
 const TreeView = ({ menu, className }: Props) => {
   return (
-    <div className={cn("p-4 max-w-xs w-full rounded-md", className)}>
+    <div className={cn("p-4 max-w-xs w-full rounded-md shrink-0", className)}>
       {menu.map((item, index) => (
         <TreeItem key={index} label={item.label} items={item.items} />
       ))}

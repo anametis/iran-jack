@@ -1,18 +1,10 @@
 import { ReactNode } from "react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { AlignJustify, ChevronDown, Search } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { ChartContainer } from "../ui/chart";
 import ChartSection from "../ChartSection";
 import TreeView from "../ui/treeview";
 
@@ -72,7 +64,7 @@ type Props = {};
 const Home = (props: Props) => {
   return (
     <div>
-      <div className="sticky top-0 z-10 py-4 flex flex-wrap items-center gap-4 border-b border-t justify-between px-4 md:px-6">
+      <div className="top-0 z-10 py-4 flex flex-wrap items-center gap-4 border-b border-t justify-between px-4 md:px-6">
         <nav className="hidden md:flex md:flex-wrap md:items-center md:gap-5 md:text-sm lg:gap-6 w-full lg:w-auto">
           <Button className=" bg-transparent shadow-none hover:bg-transparent hover:text-white">
             <AlignJustify className="text-black" />

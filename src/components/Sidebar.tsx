@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div className="w-16 bg-secondary-bg shadow-lg h-screen flex flex-col items-center rounded-r-lg">
+    <div className="w-16 bg-secondary-bg shadow-lg h-dvh flex flex-col items-center rounded-r-lg">
       {links.map((link, index) => (
         <SidebarItem
           key={index}

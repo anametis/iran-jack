@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="flex justify-start items-start">
-          <div className="hidden md:block">
+          <div className="hidden md:block sticky top-0 z-10">
             <Sidebar />
           </div>
 
